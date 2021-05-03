@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çizim Yapma</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   
+    
+</head>
+
+<body>
+   
+ 
+<canvas id="canvas"> </canvas>
+
+<div class="trash-wrapper">
+    <button id="delete-b" class="delete-button">
+        <span class="icon">
+            <span class="lid"></span>
+            <span class="can"></span>
+            <span class="trash"></span>
+            <span class="text">Ekran Temizlendi!</span>
+        </span>
+    </button>
+</div>
+
+
+ <div class="text"> KALEM RENGİ DEĞİŞTİR</div>
+     <div class="colors">
+        <button class="color" data-color="orange"></button>
+        <button class="color" data-color="red"></button>
+        <button class="color" data-color="green"></button>
+        <button class="color" data-color="blue"></button>
+        <button class="color" data-color="white"></button>
+      </div>
+<div class="text"> ARKA PLANI DEĞİŞTİR </div> 
+     <button  class="buttons" type="button" onclick="colorchange('white')">Beyaz</button>    
+     <button class="buttons" type="button" onclick="colorchange('red')">Kırmızı</button>
+     <button class="buttons" type="button" onclick="colorchange('gray')">Gri</button>
+     <button  class="buttons" type="button" onclick="colorchange('yellow')">Sarı</button>
+     <button  class="buttons"  type="button" onclick="colorchange('blue')">Mavi</button>
+     <button class="butto" type="button" onclick="reset()">EKRANI TEMİZLE</button> <br>
+
+     <div>
+        <ul class="icons">
+            <li>
+                <a href="https://www.instagram.com/emregulec._/?hl=tr" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+           
+            <li>
+                <a href="https://twitter.com/ErolEmreGle1 " target="_blank"> <i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/emre-g%C3%BCle%C3%A7-5429b8210/" target="_blank"><i class="fab fa-linkedin"></i> </a>
+            </li>
+            <li>
+                <a href="https://github.com/erolemre1" target="_blank"> <i class="fab fa-github"></i></a>
+            </li>
+        </ul>
+    </div>
+   
+    <script src="./script.js">  </script>
+    <script src="./background.js"></script>
+    
+
+</body>
+</html>
